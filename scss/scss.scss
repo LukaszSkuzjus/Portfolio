@@ -1,0 +1,762 @@
+
+@import url('https://fonts.googleapis.com/css?family=Kurale|Margarine');
+
+body{
+	margin: 0;
+	padding: 0;
+  min-width: 365px;
+  font-family: 'Kurale', serif;
+
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.container2 {
+  width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+video#bcr_bgvid
+{
+  display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url('../images/background.jpg') no-repeat;
+    background-size: cover; 
+}
+
+
+ /* sekcja powitalna */
+
+.jumbotron{
+	background-image: url('http://wallpaperstock.net/starry-night-sky_wallpapers_33935_1600x1200.jpg');
+	height: 500px;
+	width: 100%;
+  background-repeat:no-repeat;
+  background-position:center bottom;
+  background-size: cover;
+  margin-bottom: -20px; 
+  
+}
+.flexNav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.nav {
+  text-align: center;
+  overflow: hidden;
+  margin: 2em auto;
+  max-width: 1200px;
+  position: relative; 
+
+}
+.nav a {
+  display: block;
+  position: relative;
+  float: left;
+  padding: 1em 0 2em;
+  width: 25%;
+  text-decoration: none;
+  color: #393939;
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+  -o-transition: .7s;
+  -ms-transition: .7s;
+  transition: .7s; 
+  font-size: 25px;
+  color: white;
+
+}
+.nav a:hover {
+  color: #c6342e; 
+}
+
+.effect {
+  position: absolute;
+  left: -12.5%;
+  -webkit-transition: 0.7s ease-in-out;
+  -moz-transition: 0.7s ease-in-out;
+  -o-transition: 0.7s ease-in-out;
+  -ms-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out; 
+}
+
+.nav a:nth-child(1):hover ~ .effect {
+  left: 12.5%; }
+.nav a:nth-child(2):hover ~ .effect {
+  left: 37.5%; }
+.nav a:nth-child(3):hover ~ .effect {
+  left: 62.5%; }
+.nav a:nth-child(4):hover ~ .effect {
+  left: 87.5%; }
+
+.ph-heart-nav .effect, .ph-heart-nav a:after, .ph-heart-nav a:before {
+  background: url('http://devnet.pl/star.png') no-repeat; }
+.ph-heart-nav .effect {
+  position: absolute;
+  bottom: 26px;
+  background-position: 0 0;
+  height: 8px;
+  width: 62px; 
+  margin-left:-31px; 
+  top: 67px;
+}
+
+.ph-heart-nav a:before {
+  content: "";
+  display: block;
+
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  background-position: -62px 0;
+  height: 20px;
+  width: 11px;
+  margin-left: -11px; 
+top: 60px;}
+
+.ph-heart-nav a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  z-index: 1;
+  background-position: -73px 0;
+  height: 20px;
+  width: 11px; 
+top: 60px;}
+
+
+.jumbotron .slogan {
+  font-size: 65px;
+  font-family: "Open Sans";
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.092;
+  text-align: center;
+  margin: 0 120px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.toCenter{
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+}
+.scroll-icon {
+    width: 150px;
+    height: 110px;
+    border-right: 1px dashed rgba(255, 255, 255, 0.3);
+    transform: translate(0, 0);
+    margin-top: 20px;
+}
+
+.scroll-icon .end-top {
+    content: "";
+    background-color: #FFFFFF;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: -6px;
+    right: -4px;
+}
+.scroll-icon .mouse {
+    position: absolute;
+    height: 38px;
+    width: 25px;
+    border: 3px solid #FFFFFF;
+    border-radius: 12px;
+    right: -13px;
+    top: 10px;
+    display: block;
+    text-align: center;
+    z-index: 700;
+    -webkit-animation: vertical 3s ease infinite;
+    animation: vertical 3s ease infinite;
+}
+.scroll-icon .mouse::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 3px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    margin-left: -1.5px;
+    border-radius: 2px;
+}
+
+@-webkit-keyframes vertical {
+    0%, 60%, 80%, 100% {
+        -webkit-transform: translateY(0);
+    }
+    20% {
+        -webkit-transform: translateY(-5px);
+    }
+    40% {
+        -webkit-transform: translateY(20px);
+    }
+}
+@keyframes vertical {
+    0%, 60%, 80%, 100% {
+        -webkit-transform: translateY(0);
+    }
+    20% {
+        -webkit-transform: translateY(-5px);
+    }
+    40% {
+        -webkit-transform: translateY(20px);
+    }
+}
+
+@media (max-width: 721px) {
+  .nav a{
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .nav {
+    margin: 0;
+  }
+
+  .effect{
+    display: none;
+  }
+
+  .nav .a1{
+    width: 130px;
+  }
+  .nav .a2{
+    width: 130px;
+  }
+  .nav .a3{
+    width: 150px;
+  }
+  .nav .a4{
+    width: 130px;
+  }
+  
+}  
+
+@media (max-width: 556px) {
+ .jumbotron .slogan{
+  font-size: 32px;
+  }
+
+}  
+
+/* sekcja O Mnie */
+
+.OMnie{
+	 background-color:#000000;
+	 text-align: center;
+   height: 600px;
+   padding-top: 90px;
+   color: #5b5a52;
+
+}
+
+.OMnie h1{
+  font-size: 55px;
+}
+
+.flex-containerAboutMe{
+  margin-top: 51px;
+  margin-bottom: 127px;
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flex-containerAboutMe .fewWordsAboutMe{
+  text-align: center;
+  width: 500px;
+  justify-content:center;
+  align-items:flex-start;
+  margin-bottom: 25px;
+  margin-right: 0px;
+  
+  font-family: 'Margarine', cursive;
+}
+
+.flex-containerAboutMe .fewWordsAboutMe p{
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.MySkills{
+	width: 350px;
+  margin-top: -25px;
+}
+
+
+.MySkills i{
+	font-size: 50px;
+	padding: 0 4px;
+  
+}
+
+.MySkills h2{
+  margin-bottom: 15px;
+
+}
+
+@media (max-width: 866px){
+  .OMnie{
+    height: 850px;
+  }
+}
+@media (max-width: 556px) {
+  .OMnie{
+    height: 740px;
+  }
+  .OMnie h1{
+    font-size: 45px;
+  }
+
+  .flex-containerAboutMe .fewWordsAboutMe p{
+    font-size: 15px;
+  }
+
+}
+
+
+/* sekcja Moje Projekty */
+
+.works{
+  font-family: initial;
+}
+
+.h2InTheWorksSection{
+  font-size: 35px;
+  font-family: 'Kurale', serif;
+  color: #9b8f66;
+  margin-bottom: 40px;
+}
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0; }
+
+img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover; }
+
+.zPsdToCode,
+.zPsdToCode2,
+.color-game,
+.country-search-engine,
+.KanbanBoard,
+.QuoteGenerator,
+.rock-paper-scissors,
+.ChuckNorrisJokes {
+  position: relative;
+  text-align: center; }
+  .works p {
+    font-size: 15px;
+    margin: 30px 0; }
+  .works .description {
+    position: absolute;
+    color: transparent;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    transition: .5s ease; }
+    .works .description:hover {
+      background: rgba(50, 28, 114, 0.8);
+      color: #FFF; }
+      .works .description:hover a {
+        color: #FFF;
+        transition: .3s ease;
+        border: 2px solid #FFF; }
+    .works .description a {
+      display: inline-block;
+      color: transparent;
+      border: 2px solid transparent;
+      width: 120px;
+      height: 30px;
+      line-height: 30px;
+      text-decoration: none;
+      font-size: 15px;
+      margin: 10px auto;
+      border-radius: 8px;
+      transition: .1s ease; }
+      .works .description a:hover {
+        background-color: #FFF;
+        color: black; }
+    .works .description p {
+      letter-spacing: 1px; }
+
+.zPsdToCode {
+  width: 100%; }
+
+.color-game {
+  width: 50%;
+  margin-left: 12px; }
+
+.zPsdToCode2 {
+  width: 100%; }
+
+.country-search-engine {
+  width: 50%;
+  margin-right: 12px; }
+
+.QuoteGenerator {
+  width: 50%;
+  margin-left: 12px; }
+
+.KanbanBoard {
+  width: 100%; }
+
+.rock-paper-scissors {
+  width: 55%;
+  margin-right: 12px; }
+
+.ChuckNorrisJokes {
+  width: 45%;
+  margin-left: 12px; }
+
+
+@media (max-width: 1024px) {
+  .works {
+    margin: 0 ;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+  }
+  .country-search-engine {
+  width: 100%;
+  margin:0;
+   }
+
+  .QuoteGenerator {
+    width: 100%;
+    margin: 10px 0;
+    margin-top: 20px;
+    }
+
+  .rock-paper-scissors {
+    width: 100%;
+    margin: 10px 0;
+
+     }
+
+  .ChuckNorrisJokes {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+     }
+
+  .works .description {
+    background-color: rgba(97, 94, 94, 0.9); 
+  }
+  .works .description h2,
+  .works .description p {
+    color: #FFF;
+    padding: 0 50px; 
+  }
+  .works .description a {
+    color: #FFF;
+    border-color: #FFF; 
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .works.description {
+    height: 300px; 
+  }
+  .works .description h2 {
+    font-size: 22px; 
+  }
+  .works .description p {
+    font-size: 12px; 
+  }
+  .works .description a {
+    font-size: 12px; 
+  }
+ 
+}
+
+
+/* sekcja cytaty */
+
+.QuotesSections {
+  margin-top: 101px;
+  background-color: #000;
+
+}
+
+.QuotesSections h1 {
+  
+  text-align: center;
+  padding: 40px 0;
+  font-family: 'Kurale', serif;
+  color: #9b8f66;
+}
+
+.carousel .quote{
+  margin-left: 300px;
+  margin-top: 100px;
+  display: inline-block;
+  max-width: 470px;
+  font-size: 26px;
+  font-family: "Cardo";
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  line-height: 1.167;
+  color: #918662;
+font-family: 'Margarine', cursive;
+  
+}
+
+
+.carousel .author{
+  display: inline-block;
+  max-width: 470px;
+  font-size: 13px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.615;
+ color: #918662;
+font-family: 'Kurale', serif;
+}
+.carousel-indicators {
+    
+    bottom: 10px;
+    left: 0px;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: 0; 
+    top: 75%;
+    list-style: none;
+    border-color:#918662;
+
+}
+
+.carousel-indicators .active{
+    background-color: #f00;
+}
+
+.carousel-inner {
+  background-color: #000;
+
+}
+.carousel {
+  max-width: 1200px;
+
+}
+
+.item{
+	height: 400px;
+
+}
+.glyphicon-chevron-left{
+  color: #918662;
+}
+.glyphicon-chevron-right{
+  color: #918662;
+}
+
+
+.carousel-indicators .active{
+    background-color: #918662;
+}
+
+@media (max-width: 1024px){
+  .carousel .author{
+    top: 207px;
+    position: absolute;
+    left: 335px;
+  }
+
+  .carousel .quote{
+    margin-left: 150px;
+    margin-top: 100px;
+    margin-right: 20px;
+  }
+
+
+}
+
+@media (max-width: 575px){
+  .QuotesSections h1 {
+  
+    font-size: 32px;
+  }
+
+  .carousel .quote{
+    top: 54px;
+    margin-left: 50px;
+    margin-top: 70px;
+    margin-right: 20px;
+    font-size: 18px;
+  
+  }
+
+
+  .carousel .author{
+    top: 157px;
+    left: 105px;
+  }
+
+}
+
+
+
+/* sekcja kontakty */
+
+
+.kontakt {
+  background-color: #1d313d;
+  color: white;
+  padding: 2%;
+  width: 100%; 
+  height: 400px;
+  text-align: center;
+}
+
+.kontakt h1{
+  font-size: 45px;
+}
+
+.kontakt h2{
+  font-size: 40px;
+  font-style: oblique;
+}
+.kontakt p{
+  font-size: 20px;
+  font-style: italic;
+}
+
+.kontakt .flex-containerKontakt{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.kontakt .flex-containerKontakt .telefon{
+  width: 350px;
+}
+.kontakt .flex-containerKontakt .e-mail{
+  width: 350px;
+}
+.kontakt .flex-containerKontakt .SocialMedia{
+  width: 350px;
+}
+
+.kontakt a {
+  padding: 0 2%;
+  text-decoration: none; 
+}
+.kontakt a:hover {
+  text-decoration: none;
+}
+.kontakt a i {
+  color: white;
+  padding: 2%;
+  font-size: 1.7em;
+  border: 2px solid white;
+  transition-duration: 0.4s;
+  transition-timing-function: ease; 
+}
+.kontakt a i:hover {
+  color: #051e23;
+  background: white; 
+}
+.kontakt a span {
+
+  color: white;
+  padding: 1.8% ;
+  font-size: 1.3em;
+  border: 2px solid white;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  font-weight: bold; 
+}
+.kontakt a span:hover {
+  color: #051e23;
+  background: white;
+  font-weight: bold; 
+}
+
+
+@media (max-width: 767px){
+
+
+.kontakt h1{
+  font-size: 40px;
+}
+
+.kontakt h2{
+  font-size: 35px;
+  font-style: oblique;
+}
+.kontakt p{
+  font-size: 18px;
+  font-style: italic;
+}
+
+.kontakt .flex-containerKontakt{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.kontakt .flex-containerKontakt .telefon{
+  width: 220px;
+}
+.kontakt .flex-containerKontakt .e-mail{
+  width: 220px;
+}
+.kontakt .flex-containerKontakt .SocialMedia{
+  width: 220px;
+}
+
+
+}
+
+@media(max-width:506px ){
+  .kontakt {
+    height: 520px;
+  }
+}
