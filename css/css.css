@@ -27,7 +27,6 @@ video#bcr_bgvid {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url("../images/background.jpg") no-repeat;
   background-size: cover; }
 
 /* sekcja powitalna */
@@ -362,10 +361,6 @@ img {
 .zPsdToCode {
   width: 100%; }
 
-.color-game {
-  width: 50%;
-  margin-left: 12px; }
-
 .zPsdToCode2 {
   width: 100%; }
 
@@ -390,7 +385,8 @@ img {
 
 @media (max-width: 1024px) {
   .works {
-    margin: 0; }
+    margin-right: 20px;
+    margin-left: 20px; }
   .row {
     display: flex;
     justify-content: center;
@@ -577,12 +573,12 @@ img {
 
 .kontakt a span {
   color: white;
-  padding: 1.8%;
-  font-size: 1.3em;
+  padding: 1.0% 1.5%;
+  font-size: 1.5em;
+  padding-bottom: 0.7%;
   border: 2px solid white;
   transition-duration: 0.4s;
-  transition-timing-function: ease;
-  font-weight: bold; }
+  transition-timing-function: ease; }
 
 .kontakt a span:hover {
   color: #051e23;
