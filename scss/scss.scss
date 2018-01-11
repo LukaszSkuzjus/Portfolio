@@ -4,8 +4,9 @@
 body{
 	margin: 0;
 	padding: 0;
-  min-width: 365px;
+  min-width: 300px;
   font-family: 'Kurale', serif;
+  background-color: black; 
 
 }
 
@@ -19,6 +20,7 @@ body{
   margin: 0 auto;
 
 }
+
 
 video#bcr_bgvid
 {
@@ -263,6 +265,10 @@ top: 60px;}
 @media (max-width: 556px) {
  .jumbotron .slogan{
   font-size: 32px;
+  
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
   }
 
 }  
@@ -341,6 +347,24 @@ top: 60px;}
 
 }
 
+@media (max-width: 439px) {
+  .OMnie{
+    height: 770px;
+  }
+  
+}
+@media (max-width: 372px) {
+  .OMnie{
+    height: 800px;
+  }
+  
+}
+@media (max-width: 324px) {
+  .OMnie{
+    height: 870px;
+  }
+  
+}
 
 /* sekcja Moje Projekty */
 
@@ -373,7 +397,9 @@ img {
 .KanbanBoard,
 .QuoteGenerator,
 .rock-paper-scissors,
-.ChuckNorrisJokes {
+.ChuckNorrisJokes,
+.VideoPlayer,
+.SnakeGame {
   position: relative;
   text-align: center; }
   .works p {
@@ -417,8 +443,10 @@ img {
 
 .zPsdToCode {
   width: 100%; }
-
-
+.VideoPlayer{
+  width: 100%; }
+.SnakeGame{
+  width: 60%; }
 .zPsdToCode2 {
   width: 100%; }
 
@@ -443,10 +471,7 @@ img {
 
 
 @media (max-width: 1024px) {
-  .works {
-    margin-right: 20px; 
-    margin-left: 20px; 
-  }
+  
 
   .row {
     display: flex;
@@ -466,6 +491,11 @@ img {
     margin-top: 20px;
     
     }
+  .SnakeGame{
+    width: 100%;
+    margin: 10px 0;
+    
+  }
 
   .rock-paper-scissors {
     width: 100%;
@@ -615,13 +645,16 @@ font-family: 'Kurale', serif;
 
 
 }
-
+@media (max-width: 768px){
+  .QuotesSections {
+    margin-top: -20px;
+  }
+}
 @media (max-width: 575px){
   .QuotesSections h1 {
-  
     font-size: 32px;
   }
-
+  
   .carousel .quote{
     top: 54px;
     margin-left: 50px;
@@ -639,18 +672,23 @@ font-family: 'Kurale', serif;
 
 }
 
-
-
+@media (max-width: 348px){
+  .QuotesSections h1 {
+  
+    font-size: 26px;
+  }
+}
 /* sekcja kontakty */
 
 
 .kontakt {
   background-color: #1d313d;
   color: white;
-  padding: 2%;
+  padding: 2% 0;
   width: 100%; 
   height: 400px;
   text-align: center;
+  
 }
 
 .kontakt h1{
